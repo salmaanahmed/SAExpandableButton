@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    tools:context="com.interconn.salmaanahmed.saexpandablebuttondemo.MainActivity">
+
+    <com.interconn.salmaanahmed.saexpandablebutton.ExpandableButton
+        android:id="@+id/expandableButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:text="Expandable Button One"
+        app:childView="@+id/childView1"/>
+
+    <TextView
+        android:id="@+id/childView1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="Click to complete the task"
+        android:onClick="childClicked"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"/>
+
+    <com.interconn.salmaanahmed.saexpandablebutton.ExpandableButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:text="Expandable Button Two"
+        app:color="#297e55"
+        app:icon="@drawable/ic_arrow_drop_down_black_24dp"
+        app:childView="@+id/childView2" />
+
+    <TextView
+        android:id="@+id/childView2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="Expandable Button Child Two"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"/>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ExpandableButton">
+        <attr name="text" format="string" />
+        <attr name="color" format="color" />
+        <attr name="childView" format="reference" />
+        <attr name="icon" format="reference" />
+    </declare-styleable>
+</resources>
