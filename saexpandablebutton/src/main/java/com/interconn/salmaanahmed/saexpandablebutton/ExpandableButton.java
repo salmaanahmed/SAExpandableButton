@@ -42,26 +42,26 @@ public class ExpandableButton extends FrameLayout {
     ExpandableButtonListener expandableButtonListener = null;
 
 
-//    public ExpandableButton(@NonNull Context context) {
-//        super(context);
-//        initButton(context, null);
-//    }
+    public ExpandableButton(@NonNull Context context) {
+        super(context);
+        initButton(context, null);
+    }
 
     public ExpandableButton(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         initButton(context, attrs);
     }
 
-//    public ExpandableButton(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
-//        super(context, attrs, defStyleAttr);
-//        initButton(context, attrs);
-//    }
-//
-//    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-//    public ExpandableButton(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-//        super(context, attrs, defStyleAttr, defStyleRes);
-//        initButton(context, attrs);
-//    }
+    public ExpandableButton(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        initButton(context, attrs);
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    public ExpandableButton(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
+        initButton(context, attrs);
+    }
 
     /**
      * Initialize button on every constructor call.
@@ -77,6 +77,10 @@ public class ExpandableButton extends FrameLayout {
         imageArrow = view.findViewById(R.id.iv_arrow);
         viewColor = view.findViewById(R.id.view_color);
 
+        setClickListener();
+
+        if (attrs == null) return;
+
         TypedArray typedArray = context.getTheme().obtainStyledAttributes(
                 attrs, R.styleable.ExpandableButton, 0, 0);
 
@@ -88,7 +92,6 @@ public class ExpandableButton extends FrameLayout {
         } finally {
             typedArray.recycle();
         }
-        setClickListener();
     }
 
     /**
@@ -147,6 +150,9 @@ public class ExpandableButton extends FrameLayout {
         }
     }
 
+    /**
+     * Rotate arrow view on expanding and collapsing
+     */
     private void rotateArrow() {
         if (imageArrow.getRotation() == 0) imageArrow.animate().rotation(180).start();
         else imageArrow.animate().rotation(0).start();
