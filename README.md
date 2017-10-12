@@ -31,7 +31,7 @@ You can use any view as a child view for it.
 <dependency>
     <groupId>com.github.salmaanahmed</groupId>
     <artifactId>SAExpandableButton</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 
@@ -48,7 +48,7 @@ allprojects {
 **Step 2.** Add the dependency
 ```
 dependencies {
-  compile 'com.github.salmaanahmedz:SAExpandableButton:1.0.0'
+  compile 'com.github.salmaanahmedz:SAExpandableButton:1.0.1'
 }
 ```
 # Manual Installation
