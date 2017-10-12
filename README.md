@@ -4,9 +4,14 @@
 Expandable button is lightweight custom button which hides and shows child views on click automatically.
 It is customizeable, you can change text, icon and color both programatically and in XML.
 It also have callback listeners which enables it to be used in various enviornments.
-
+<br>
+<img height="400" src="https://github.com/salmaanahmed/SAExpandableButton/blob/master/screenshots/Screenshot_ExpandableButton.png?raw=true" />
+<br>
 # Demonstration
 You can use any view as a child view for it.
+<br>
+<img height="400" src="https://github.com/salmaanahmed/SAExpandableButton/blob/master/screenshots/ExpandableButtonGif.gif?raw=true" />
+<br>
 
 # Installation
 ```SAExpandableButton``` can be installed using Maven, Gradle, or manually.
