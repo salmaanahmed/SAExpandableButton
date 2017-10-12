@@ -119,6 +119,10 @@ public class ExpandableButton extends FrameLayout {
         if (icon != null) imageArrow.setImageDrawable(icon);
     }
 
+    /**
+     * Setting up event listeners for expandable button
+     * @param expandableButtonListener listener
+     */
     public void setCallbackListener(ExpandableButtonListener expandableButtonListener) {
         this.expandableButtonListener = expandableButtonListener;
     }
