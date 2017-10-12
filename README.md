@@ -109,8 +109,8 @@ expandableButton.setCallbackListener(new ExpandableButton.ExpandableButtonListen
 ```
 
 # Contributions and Licence
-```SAExpandableButton``` is available under the MIT license. See the [LICENSE](https://github.com/EngrAhsanAli/AACustomFont/blob/master/LICENSE) file for more info.
+```SAExpandableButton``` is available under the MIT license. See the [LICENSE](https://github.com/salmaanahmed/SAExpandableButton/blob/master/LICENCE.rtf) file for more info.
 
 Pull requests are welcome! The best contributions will consist of substitutions or configurations for classes/methods known to block the main thread during a typical app lifecycle.
 
-I would love to know if you are using AACustomFont in your app, send an email to [Salmaan Ahmed](mailto:salmaan.ahmed@hotmail.com)
+I would love to know if you are using SAExpandableButton in your app, send an email to [Salmaan Ahmed](mailto:salmaan.ahmed@hotmail.com)
