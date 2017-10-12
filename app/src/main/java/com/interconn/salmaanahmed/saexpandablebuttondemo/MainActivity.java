@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.childView1);
     }
 
     public void childClicked(View view) {

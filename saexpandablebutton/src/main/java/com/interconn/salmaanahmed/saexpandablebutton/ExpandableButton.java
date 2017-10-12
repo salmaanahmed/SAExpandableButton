@@ -36,8 +36,8 @@ public class ExpandableButton extends FrameLayout {
     ImageView imageArrow;       //image arrow
     View viewColor;             //strip color
 
-    int childViewResId = 0;
-    View childView;
+    int childViewResId = 0;     //child view id
+    View childView;             //child view
 
     ExpandableButtonListener expandableButtonListener = null;
 
@@ -117,6 +117,14 @@ public class ExpandableButton extends FrameLayout {
      */
     public void setIcon(Drawable icon) {
         if (icon != null) imageArrow.setImageDrawable(icon);
+    }
+
+    /**
+     * Set child view programmatically
+     * @param view child view
+     */
+    public void setChildView(View view) {
+        this.childView = view;
     }
 
     /**
