@@ -52,7 +52,7 @@ dependencies {
 }
 ```
 # Manual Installation
-If you prefer not to use either of the above mentioned dependency managers, you can integrate AACustomFont into your project manually by adding the files contained in the java folder to your project.
+If you prefer not to use either of the above mentioned dependency managers, you can integrate SAExpandableButton into your project manually by adding the files contained in the java folder to your project.
 
 # Getting Started
 # Using XML
