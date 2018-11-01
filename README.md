@@ -16,7 +16,7 @@ You can use any view as a child view for it.
 
 # Maven
 **Step 1.** Add the JitPack repository to your build file
-```
+```xml
 <repositories>
     <repository>
         <id>jitpack.io</id>
@@ -25,7 +25,7 @@ You can use any view as a child view for it.
 </repositories>
 ```
 **Step 2.** Add the dependency
-```
+```xml
 <dependency>
     <groupId>com.github.salmaanahmed</groupId>
     <artifactId>SAExpandableButton</artifactId>
@@ -35,7 +35,7 @@ You can use any view as a child view for it.
 
 # Gradle
 **Step 1.** Add the JitPack repository to your build file
-```
+```gradle
 allprojects {
     repositories {
       ...
@@ -44,7 +44,7 @@ allprojects {
 }
 ```
 **Step 2.** Add the dependency
-```
+```gradle
 dependencies {
   compile 'com.github.salmaanahmedz:SAExpandableButton:1.0.1'
 }
@@ -55,7 +55,7 @@ If you prefer not to use either of the above mentioned dependency managers, you 
 # Getting Started
 # Using XML
 You can use expandable button in XML as following
-```
+```xml
 <com.interconn.salmaanahmed.saexpandablebutton.ExpandableButton
     android:layout_width="match_parent"
     android:layout_height="50dp"
@@ -80,19 +80,19 @@ If you want to animate you should use ```android:animateLayoutChanges="true"``` 
 # Using Java
 # Referencing View
 You can reference the expandable button in java to perform muliple operations
-```
+```java
 expandableButton = findViewById(R.id.expandableButton);
 ```
 # Create expandable button programmatically
 You can also create expandable button programatically in java using the following code
-```
+```java
 expandableButton = new ExpandableButton(MainActivity.this);
 expandableButton.setChildView(childView);
 expandableButton.setBarColor(Color.BLUE);
 expandableButton.setIcon(R.drawable.ic_arrow);
 ```
 # Set callback listeners
-```
+```java
 expandableButton.setCallbackListener(new ExpandableButton.ExpandableButtonListener() {
     @Override
     public void onViewExpanded() {
