@@ -5,8 +5,6 @@ Expandable button is lightweight custom button which hides and shows child views
 It is customizeable, you can change text, icon and color both programatically and in XML.
 It also have callback listeners which enables it to be used in various enviornments.
 <br>
-<img height="400" src="https://github.com/salmaanahmed/SAExpandableButton/blob/master/screenshots/Screenshot_ExpandableButton.png?raw=true" />
-<br>
 # Demonstration
 You can use any view as a child view for it.
 <br>
